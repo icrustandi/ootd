@@ -17,4 +17,4 @@ app.get('/clothes', (req, res) => {
 app.post('/clothes',clothingItemController.createItem);
 app.post('/users', userController.createUser);
 
-app.listen(3000); //listens on port 3000 -> http://localhost:3000/
+app.listen(3001); //listens on port 3000 -> http://localhost:3000/
