@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get('/clothes', (req, res) => {
-  models.ClothingItem.findAll({}).then((clothingItems) => {
+  models.ClothingItem.findAll({where: {}}).then((clothingItems) => {
     res.json(clothingItems);
   });
 });

@@ -1,7 +1,7 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var ClothingItem = sequelize.define('ClothingItem', {
-    userId: DataTypes.INTEGER,
+    UserId: DataTypes.INTEGER,
     brand: DataTypes.STRING,
     color: DataTypes.STRING,
     type: DataTypes.STRING,
@@ -11,7 +11,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     washed: {
       type: DataTypes.DATE,
-    },
+    }
   });
   ClothingItem.associate = function (models) {
     // associations can be defined here
